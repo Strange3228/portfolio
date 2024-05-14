@@ -1,0 +1,70 @@
+@import "../../../styles/variables";
+
+.experience {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 0;
+    transform: translateX(-50%);
+    background: #2e2e2e;
+    width: 1px;
+    height: 100%;
+  }
+
+  .item-line {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .item-line__filler {
+      flex: 1;
+    }
+
+    .item-line__item {
+      flex: 1;
+    }
+  }
+}
+
+.item-line__center-icon {
+  padding: 15px 25px;
+  background: black;
+
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: map_get($responsive-screen-width, 's')) {
+  .item-line__filler {
+    display: none;
+  }
+
+  .item-line__item {
+    order: 99;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .item-line__center-icon {
+    padding: 15px 7px;
+  }
+
+  .experience::before {
+    top: 0;
+    left: 19px;
+    z-index: 0;
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,19 @@
+<header>
+  <nav class="container">
+    <div class="navbar__avatar">
+      <img src="assets/avatar-graphic.svg" alt="">
+    </div>
+
+    <div class="navbar__middle">
+      <ul class="navbar__items">
+        <li
+          *ngFor="let link of links"
+          class="navbar__item navbar__item--active"
+          [ngClass]="{'navbar__item--active': activeLink === link.link}"
+        >
+          <a [routerLink]="[link.link]">{{link.text}}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

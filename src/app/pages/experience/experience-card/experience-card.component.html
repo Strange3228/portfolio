@@ -1,0 +1,41 @@
+<div class="card__container">
+<div
+  class="card"
+  #card
+  appCardTilt
+>
+
+  <div class="card__glare"></div>
+
+  <div class="card__icon">
+    <img [src]="details.icon ?? 'assets/exp-default-icon.svg'" alt="">
+  </div>
+
+  <div class="card__info">
+    <h3>{{details.title}}</h3>
+
+    <div class="card__info-tags">
+      <span class="card__info-tag">
+        <i class="fa-regular fa-building"></i>
+        {{details.companyName}}
+      </span>
+      <span class="card__info-tag">
+        <i class="fa-solid fa-location-dot"></i>
+        {{details.location}}
+      </span>
+    </div>
+
+    <p class="card__info-dates">
+      {{details.beginDate | date: 'MMMM yyyy'}} - {{details.endDate === 'current' ? (details.endDate | titlecase) : (details.endDate | date: 'MMMM yyyy')}}
+    </p>
+
+    <p class="card__info-desc">{{details.description}}</p>
+
+    <div class="card__info-techs">
+      <div class="card__info-tech" *ngFor="let tech of details.techStack">
+        <img [src]="tech" alt="Technology icon">
+      </div>
+    </div>
+  </div>
+</div>
+</div>

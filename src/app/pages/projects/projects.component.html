@@ -1,0 +1,11 @@
+<div class="container has-navbar-padding">
+  <app-page-title [title]="'Projects'"></app-page-title>
+
+  <div class="projects">
+    <div class="items">
+      <div *ngFor="let project of projects" class="item">
+        <app-project-card [project]="project"></app-project-card>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+
+<div class="container has-navbar-padding">
+  <app-page-title [title]="'Experience'"></app-page-title>
+
+  <div class="experience items">
+    <div class="item-line" *ngFor="let item of experience; index as index">
+      <div class="item-line__filler" *ngIf="index % 2"></div>
+      <div class="item-line__center-icon" *ngIf="index % 2">
+        <img src="assets/bullet_point.svg" alt="bullet point icon">
+      </div>
+
+      <div class="item-line__item">
+        <app-experience-card [details]="item"></app-experience-card>
+      </div>
+
+      <div class="item-line__center-icon" *ngIf="!(index % 2)">
+        <img src="assets/bullet_point.svg" alt="bullet point icon">
+      </div>
+      <div class="item-line__filler" *ngIf="!(index % 2)"></div>
+    </div>
+  </div>
+</div>

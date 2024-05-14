@@ -4,3 +4,15 @@ body {
 }
 
 $accent-text: #c1c1c1;
+
+$responsive-screen-width: (
+  xxxs: 320px,
+  xxs: 540px,
+  xs: 768px,
+  s: 850px,
+  m: 1200px,
+  l: 1600px,
+  xl: 1920px,
+  xxl: 2560px,
+  xxxl: 3840px
+);

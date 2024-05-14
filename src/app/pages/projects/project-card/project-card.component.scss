@@ -1,0 +1,114 @@
+@import "../../../../styles/mixines";
+@import "../../../../styles/variables";
+
+.card__container {
+  perspective: 1200px;
+  height: 100%;
+}
+
+.card {
+  padding: 25px;
+  border: 1px solid #2e2e2e;
+  border-radius: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tiltAnimation;
+}
+
+.card__icon {
+  margin-bottom:  10px;
+
+  img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 15px;
+  }
+}
+
+.card__header {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #2e2e2e;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  a {
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    padding: 4px;
+    color: #a4a4a4;
+    font-size: 14px;
+  }
+}
+
+.card__body {
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #2e2e2e;
+
+  .card__descr {
+    margin-bottom: 20px;
+    height: 115px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.8;
+  }
+
+  .card__dates {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+
+    .card__date {
+      border: 1px solid #2e2e2e;
+      border-radius: 15px;
+      padding: 8px 15px;
+      font-size: 12px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+}
+
+.card__techs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  .card__tech {
+    img {
+      width: 37px;
+      height: 37px;
+      object-fit: cover;
+      border: 1px solid #2e2e2e;
+      border-radius: 10px;
+      padding: 7px;
+    }
+  }
+}
+
+@media (max-width: map_get($responsive-screen-width, 'xs')) {
+  .card__body .card__descr {
+    height: unset;
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.8;
+  }
+}

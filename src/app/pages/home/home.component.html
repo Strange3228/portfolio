@@ -1,0 +1,28 @@
+
+<div class="container home height-full ">
+  <div class="home__content">
+    <h1>Hey! I'm Maksym Litvinovich</h1>
+
+    <p>Welcome to my portfolio! I'm a passionate front-end developer with expertise in Angular. With a keen eye for detail and a commitment to creating elegant, responsive, and user-friendly web applications, I specialize in crafting dynamic and efficient user interfaces. Whether it's building robust web applications from scratch or enhancing existing projects, I thrive on turning ideas into innovative, high-quality solutions. Explore my portfolio to see examples of my work and how I can bring your projects to life. Let's create something amazing together!</p>
+
+    <div class="icons">
+      <div *ngFor="let link of socialLinks" class="icon">
+        <a [href]="link.url" target="_blank">
+          <div
+            *ngIf="link.iconSvgCode; else imgContainer"
+            [innerHTML]="link.iconSvgCode | bypassHtmlSanitizer"
+            class="icon__svg"
+          ></div>
+
+          <ng-template #imgContainer>
+            <img [src]="link.iconUrl" alt="">
+          </ng-template>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="home__avatar">
+    <img src="../../../assets/avatar-irl.jpg" alt="">
+  </div>
+</div>

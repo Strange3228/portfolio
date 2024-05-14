@@ -1,0 +1,74 @@
+@import "../../../../styles/mixines";
+@import "../../../../styles/variables";
+
+.card__container {
+  perspective: 1200px;
+}
+
+.card {
+  padding: 25px;
+  border: 1px solid #2e2e2e;
+  border-radius: 15px;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  cursor: default;
+
+  @include tiltAnimation;
+
+  .card__icon img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__info-tags {
+  display: flex;
+  gap: 15px;
+
+  .card__info-tag {
+    border: 1px solid #2e2e2e;
+    border-radius: 15px;
+    padding: 8px 15px;
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+.card__info-techs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  .card__info-tech {
+    img {
+      width: 37px;
+      height: 37px;
+      object-fit: cover;
+      border: 1px solid #2e2e2e;
+      border-radius: 10px;
+      padding: 7px;
+    }
+  }
+}
+
+@media (max-width: map_get($responsive-screen-width, 's')) {
+  .card {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
