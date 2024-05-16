@@ -11,6 +11,7 @@ export interface Project {
   screenshotsUrls?: string[];
   techStack: string[];
   icon?: string;
+  gallery?: string[];
 }
 
 export const PROJECTS: Project[] = [
@@ -36,6 +37,14 @@ export const PROJECTS: Project[] = [
       TECH_ICONS.scss,
       TECH_ICONS.bootstrap
     ],
+    gallery: [
+      'assets/projects/disit/1.png',
+      'assets/projects/disit/2.png',
+      'assets/projects/disit/3.png',
+      'assets/projects/disit/4.png',
+      'assets/projects/disit/5.png',
+      'assets/projects/disit/6.png',
+    ]
   },
   {
     id: 2,
@@ -125,8 +134,14 @@ export const PROJECTS: Project[] = [
   {
     id: 6,
     name: 'Research Park Web-Site',
-    description: 'Crafted the "Research Park Web-Site" utilizing WordPress and jQuery, blending functionality with user-friendly design. Seamlessly integrated dynamic features powered by jQuery to enhance user experience and engagement. Leveraged WordPress\'s robust content management system to ensure easy maintenance and updates for efficient site management.',
-    bulletPoints: [],
+    description: 'Developed the "Research Park Web-Site" utilizing WordPress and jQuery, blending functionality with user-friendly design. Seamlessly integrated dynamic features powered by jQuery to enhance user experience and engagement. Leveraged WordPress\'s robust content management system to ensure easy maintenance and updates for efficient site management.',
+    bulletPoints: [
+      'Developed the "Research Park Web-Site" using WordPress and jQuery, ensuring a blend of functionality and user-friendly design',
+      'Implemented dynamic features with jQuery to enhance user experience and engagement',
+      'Utilized WordPress\'s robust content management system for streamlined maintenance and easy updates',
+      'Ensured efficient site management and scalability through best practices in web development',
+      'Enhanced the website\'s interactivity and responsiveness to meet user needs effectively'
+    ],
     techStack: [
       TECH_ICONS.html,
       TECH_ICONS.css,
@@ -136,13 +151,26 @@ export const PROJECTS: Project[] = [
       TECH_ICONS.gitlab
     ],
     icon: 'assets/projects/norwich/logo.svg',
-    link: 'https://www.norwichresearchpark.com/'
+    link: 'https://www.norwichresearchpark.com/',
+    gallery: [
+      'assets/projects/norwich/1.png',
+      'assets/projects/norwich/2.png',
+      'assets/projects/norwich/3.png',
+      'assets/projects/norwich/4.png',
+    ]
   },
   {
     id: 7,
     name: 'Eco-friendly Bottles Shop',
     description: 'Developed the "E-Commerce Eco-friendly Bottles Shop" website, augmenting it with extensive functionality to accommodate a wide array of product variations. Leveraged WordPress and jQuery to create a seamless online shopping experience, ensuring easy navigation and efficient product browsing. Implemented specialized features to accommodate the diverse range of eco-friendly bottles, enhancing user satisfaction and promoting sustainable consumption.',
-    bulletPoints: [],
+    bulletPoints: [
+      'Developed the "E-Commerce Eco-friendly Bottles Shop" website with extensive functionality to support a wide array of product variations',
+      'Leveraged WordPress, WooCommerce, and jQuery to create a seamless and intuitive online shopping experience',
+      'Ensured easy navigation and efficient product browsing to enhance user satisfaction',
+      'Utilized Advanced Custom Fields (ACF) in WordPress to manage complex product data and ensure flexible content management',
+      'Implemented specialized features to showcase the diverse range of eco-friendly bottles effectively',
+      'Promoted sustainable consumption through user-friendly design and functionality'
+    ],
     techStack: [
       TECH_ICONS.html,
       TECH_ICONS.css,
@@ -152,13 +180,26 @@ export const PROJECTS: Project[] = [
       TECH_ICONS.woocommerce
     ],
     icon: 'assets/projects/ecoset/logo.png',
-    link: 'https://theecoset.com/'
+    link: 'https://theecoset.com/',
+    gallery: [
+      'assets/projects/ecoset/1.png',
+      'assets/projects/ecoset/2.png',
+      'assets/projects/ecoset/3.png',
+      'assets/projects/ecoset/4.png',
+    ]
   },
   {
     id: 8,
     name: 'Medical CBD Shop',
-    description: 'Crafted the "E-commerce Medical CBD Shop" with a tailored approach, ensuring compliance and reliability for medicinal products. Seamlessly integrated WordPress and jQuery to create a user-centric platform that prioritizes accessibility and security. Implemented specialized features to cater to the unique requirements of medical CBD products, providing informative content and a smooth purchasing experience.',
-    bulletPoints: [],
+    description: 'Developed the "E-commerce Medical CBD Shop" with a tailored approach, ensuring compliance and reliability for medicinal products. Seamlessly integrated WordPress and jQuery to create a user-centric platform that prioritizes accessibility and security. Implemented specialized features to cater to the unique requirements of medical CBD products, providing informative content and a smooth purchasing experience.',
+    bulletPoints: [
+      'Developed the "E-commerce Medical CBD Shop" with a tailored approach, ensuring compliance and reliability for medicinal products',
+      'Leveraged WordPress, WooCommerce, and jQuery to create a user-centric platform prioritizing accessibility and security',
+      'Utilized Advanced Custom Fields (ACF) in WordPress to manage detailed product information and ensure flexible content management',
+      'Implemented specialized features to cater to the unique requirements of medical CBD products',
+      'Provided informative content to educate users about medical CBD products',
+      'Ensured a smooth and secure purchasing experience for customers'
+    ],
     techStack: [
       TECH_ICONS.html,
       TECH_ICONS.css,
@@ -169,10 +210,17 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
-    id: 10,
+    id: 9,
     name: 'Woman Clothes Shop',
-    description: 'Designed and developed the "Woman Clothes Shop" website, leveraging the versatility of WordPress and jQuery to create a visually appealing and user-friendly platform. Tailored specifically for women\'s fashion, the website offers a seamless shopping experience with intuitive navigation and dynamic features.',
-    bulletPoints: [],
+    description: 'Developed the "Woman Clothes Shop" website, leveraging the versatility of WordPress and jQuery to create a visually appealing and user-friendly platform. Tailored specifically for women\'s fashion, the website offers a seamless shopping experience with intuitive navigation and dynamic features.',
+    bulletPoints: [
+      'Developed and developed the "Woman Clothes Shop" website, leveraging the versatility of WordPress and jQuery',
+      'Developed a visually appealing and user-friendly platform tailored specifically for women\'s fashion',
+      'Ensured a seamless shopping experience with intuitive navigation',
+      'Integrated dynamic features to enhance user engagement and satisfaction',
+      'Utilized Advanced Custom Fields (ACF) in WordPress to manage diverse product data',
+      'Leveraged WooCommerce to provide a robust e-commerce solution for efficient product management and transactions'
+    ],
     techStack: [
       TECH_ICONS.html,
       TECH_ICONS.css,
@@ -182,13 +230,27 @@ export const PROJECTS: Project[] = [
       TECH_ICONS.woocommerce
     ],
     icon: 'assets/projects/bykarol/logo.png',
-    link: 'https://bykarol.pl/'
+    link: 'https://bykarol.pl/',
+    gallery: [
+      'assets/projects/bykarol/1.png',
+      'assets/projects/bykarol/2.png',
+      'assets/projects/bykarol/3.png',
+      'assets/projects/bykarol/4.png',
+      'assets/projects/bykarol/5.png',
+    ]
   },
   {
-    id: 11,
+    id: 10,
     name: 'Yoga Nidras Platform',
     description: 'Crafted a dynamic platform on WordPress dedicated to yoga enthusiasts, hosting a directory of skilled instructors and personalized yoga nidra sessions. Empowered instructors to showcase their expertise, enabling seamless uploading and sharing of custom yoga nidra practices.',
-    bulletPoints: [],
+    bulletPoints: [
+      'Developed a dynamic platform on WordPress dedicated to yoga enthusiasts',
+      'Hosted a comprehensive directory of skilled yoga instructors',
+      'Enabled seamless uploading and sharing of custom yoga nidra sessions',
+      'Empowered instructors to showcase their expertise and personalized practices',
+      'Utilized Advanced Custom Fields (ACF) in WordPress to manage detailed instructor profiles and session content',
+      'Enhanced user engagement with intuitive navigation and dynamic features'
+    ],
     techStack: [
       TECH_ICONS.html,
       TECH_ICONS.css,
@@ -197,13 +259,25 @@ export const PROJECTS: Project[] = [
       TECH_ICONS.wordpress
     ],
     icon: 'assets/projects/nidras/logo.png',
-    link: 'https://www.yoganidranetwork.org/teachers/'
+    link: 'https://www.yoganidranetwork.org/teachers/',
+    gallery: [
+      'assets/projects/nidras/1.png',
+      'assets/projects/nidras/2.png',
+      'assets/projects/nidras/3.png',
+    ]
   },
   {
-    id: 12,
+    id: 11,
     name: 'IMC Centrum Zdrowia',
     description: 'Led frontend development for the "IMC Centrum Zdrowia" website, seamlessly integrating it with WordPress for dynamic content management. Leveraged modern web technologies to ensure a visually appealing and responsive user interface. Implemented robust connectivity between the frontend and WordPress backend, enabling seamless data exchange and efficient content updates.',
-    bulletPoints: [],
+    bulletPoints: [
+      'Led frontend development for the "IMC Centrum Zdrowia" website',
+      'Seamlessly integrated the site with WordPress for dynamic content management',
+      'Leveraged modern web technologies to ensure a visually appealing and responsive user interface',
+      'Implemented robust connectivity between the frontend and WordPress backend for seamless data exchange',
+      'Enabled efficient content updates through intuitive integration with WordPress',
+      'Utilized Advanced Custom Fields (ACF) to manage complex content structures and enhance flexibility'
+    ],
     techStack: [
       TECH_ICONS.html,
       TECH_ICONS.css,
@@ -212,6 +286,13 @@ export const PROJECTS: Project[] = [
       TECH_ICONS.wordpress
     ],
     icon: 'assets/projects/imc/logo.png',
-    link: 'https://centrumimc.pl/'
+    link: 'https://centrumimc.pl/',
+    gallery: [
+      'assets/projects/imc/1.png',
+      'assets/projects/imc/2.png',
+      'assets/projects/imc/3.png',
+      'assets/projects/imc/4.png',
+      'assets/projects/imc/5.png',
+    ]
   },
 ]

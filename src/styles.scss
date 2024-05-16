@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  max-width: 1480px;
+  max-width: 1240px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
@@ -42,3 +42,15 @@ a {
   padding-top: 100px;
 }
 
+.lightbox-wrapper .pswp__button:not(.pswp__button--arrow--right):not(.pswp__button--arrow--left) {
+  background-image: url('/assets/default-skin.png') !important;
+}
+
+.lightbox-wrapper .pswp__button--arrow--right:before {
+  background: rgba(0, 0, 0, 0.31) url('/assets/arrow_right.svg') center no-repeat !important;
+}
+
+.lightbox-wrapper .pswp__button--arrow--left:before {
+  background: rgba(0, 0, 0, 0.31) url('/assets/arrow_right.svg') center no-repeat !important;
+  transform: rotate(180deg);
+}

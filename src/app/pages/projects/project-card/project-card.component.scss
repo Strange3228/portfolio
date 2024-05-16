@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  cursor: pointer !important;
 
   @include tiltAnimation;
 }
@@ -110,5 +111,21 @@
     overflow: hidden;
     text-overflow: ellipsis;
     opacity: 0.8;
+  }
+
+  .card {
+    transform: none !important;
+
+    .card__glare {
+      opacity: 1;
+      top: -150px;
+      right: -150px;
+      left: unset;
+      height: 300px;
+      width: 300px;
+      transform: none;
+      z-index: 0;
+      pointer-events: none;
+    }
   }
 }

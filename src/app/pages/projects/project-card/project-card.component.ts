@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Project } from "../../../shared/data/projects.const";
 import { CommonModule, DatePipe } from "@angular/common";
 import { CardTiltDirective } from "../../../shared/directives/card-tilt.directive";
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-project-card',
@@ -9,7 +10,8 @@ import { CardTiltDirective } from "../../../shared/directives/card-tilt.directiv
   imports: [
     DatePipe,
     CommonModule,
-    CardTiltDirective
+    CardTiltDirective,
+    RouterLink
   ],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.scss'

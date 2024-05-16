@@ -1,0 +1,41 @@
+<div class="container has-navbar-padding">
+  <div class="project" *ngIf="project">
+    <div class="project__header">
+      <h1>{{project.name}}</h1>
+      <a *ngIf="project.link" [href]="project.link" target="_blank">
+        <i class="fa-solid fa-link"></i> Direct link
+      </a>
+      <div class="project__techs">
+        <div class="project__tech" *ngFor="let tech of project.techStack">
+          <img [src]="tech" alt="Technology icon">
+        </div>
+      </div>
+
+      <div class="project__logo">
+        <img [src]="project.icon ?? 'assets/exp-default-icon.svg'" alt="{{project.name}} logo">
+      </div>
+    </div>
+
+    <div class="project__body">
+      <h3>My responsibilities:</h3>
+
+      <ul>
+        <li *ngFor="let item of project.bulletPoints">{{item}}</li>
+      </ul>
+    </div>
+
+    <div class="project__gallery" *ngIf="project.gallery && project.gallery.length">
+      <h3>Screenshots</h3>
+
+      <div class="projects__images images" [photoGalleryGroup]="{ arrowEl: true, indexIndicatorSep: ' - ' }">
+        <div
+          *ngFor="let image of project.gallery"
+          class="projects__images-item images-item"
+          [photoGallery]="image"
+        >
+          <img [src]="image">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
