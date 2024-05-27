@@ -92,6 +92,48 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 4,
+    name: 'Suggest a film - Pet Project',
+    beginDate: new Date('2023-01-01'),
+    endDate: new Date('2023-02-01'),
+    icon: 'assets/projects/suggest-a-film/logo.png',
+    description: '"Suggest a Film" is an engaging and interactive web application designed for movie enthusiasts to recommend films. Leveraging a comprehensive film API, the application allows users to easily suggest movies, contributing to a dynamic and ever-growing list of film recommendations.\n' +
+      '\n' +
+      'Users can suggest movies through a simple and intuitive interface, ensuring that the process is seamless and enjoyable. The application is connected to a robust film API, providing users with accurate and up-to-date information about the movies they suggest.\n' +
+      '\n' +
+      'The admin panel features a secure login system that allows the administrator to access the backend of the application. Through the admin panel, the administrator can view all the films suggested by users, manage the list efficiently, and mark films as watched. This functionality helps the administrator keep track of viewed suggestions and maintain an organized list.\n' +
+      '\n' +
+      'This project showcases my ability to integrate APIs, build user-friendly interfaces, and develop secure admin functionalities. It reflects my passion for movies and technology, blending them into a practical application that encourages user interaction and feedback.\n' +
+      '\n' +
+      'Future enhancements may include adding user registration and login to personalize the suggestion experience, allowing users to rate and review the suggested films to create a community-driven platform, and implementing a notification system to alert the admin of new suggestions or updates.\n' +
+      '\n' +
+      '"Suggest a Film" is more than just a recommendation tool; it is a testament to my skills in web development and my love for cinema.',
+    bulletPoints: [
+      'A simple and intuitive interface built with Angular, allowing users to effortlessly suggest films.',
+      'Connected to a robust film API to provide accurate and up-to-date movie information',
+      'Features a secure login system for administrators to access the backend and manage film suggestions',
+      'Admins can view and manage all suggested films, ensuring an organized and efficient system',
+      'Administrators can mark films as watched to keep track of viewed suggestions',
+      'Plans include user registration and login, rating and review functionalities, and a notification system for new suggestions and updates'
+    ],
+    link: 'https://suggest-a-film.vercel.app',
+    gallery: [
+      'assets/projects/suggest-a-film/1.png',
+      'assets/projects/suggest-a-film/2.png',
+      'assets/projects/suggest-a-film/3.png',
+      'assets/projects/suggest-a-film/4.png',
+    ],
+    techStack: [
+      TECH_ICONS.angular,
+      TECH_ICONS.scss,
+      TECH_ICONS.tailwind,
+      TECH_ICONS.jest,
+      TECH_ICONS.karma,
+      TECH_ICONS.trello,
+      TECH_ICONS.github
+    ],
+  },
+  {
+    id: 4,
     name: 'Task Management System',
     beginDate: new Date('2022-10-01'),
     endDate: new Date('2023-01-01'),
